@@ -1,0 +1,9 @@
+/* font cdn */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://allfont.net/allfont.css?fonts=agency-fb');
+@import url('https://allfont.net/allfont.css?fonts=agency-fb-bold');
+
+/* css */
+@import url('../css/reset.css');
+@import url('../css/global.css');
+@import url('../css/page.css');

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../portpolio/css/import.css">
+    <script>
+        $(document).ready(function(){
+
+            $('.touristAttraction .btn_more').click(function(e){
+                e.preventDefault();
+                $(this).next().addClass('active');
+                var swiper = new Swiper('.swiper-container', {
+                  navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                  },
+                });
+            });
+            $('.touristAttraction div.black').click(function(){
+                $('div.black').removeClass('active');
+        
+
+            })
+            $('section.touristAttraction > div > figure > figcaption > div.black > div.white').click(function(e){
+                e.stopPropagation();
+            })
+            $('.touristAttraction .close_button').click(function(e){
+                e.preventDefault();
+                $('div.black').removeClass('active');
+            })
+            $('footer > div > a').click(function(e){
+                e.preventDefault();
+                $('html,body').animate({scrollTop: 0},2000);
+            })
+
+
+            $('.black').on('mousewheel',function(e){
+                e.preventDefault();
+                console.log('11');
+            })
+        });
+        </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><a><img src="../portpolio/images/Header_logo.png" alt=""></a></h1>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">CONTENTS</a></li>
+                <li><a href="">ABOUT</a></li>
+            </ul>
+            <ul>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">LANGUAGE</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+        <h2>TRAVEL TO OSAKA.</h2>
+    </header>
+    <section class="touristAttraction">
+        <h2>Various tourist attractions Osaka !</h2>
+        <div>
+            <figure>
+                <img src="../portpolio/images/Tourist_Attraction01.png" alt="">
+                <figcaption>
+                    <h3>가이유칸 수족관</h3>
+                    <p>
+                        거대한 고래상어를 보며 깜짝 놀라고,
+                        <br>두둥실 떠다니는 해파리를 보며 빙긋 웃어보는 곳
+                        <br>다채로운 수조 속에 한가득 펼쳐지는 바다의 신비!</p>
+                    <a class="btn_more">더보기</a>
+                    <div class='black'>
+                        <div class="white">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><span></span></div>
+                                    <div class="swiper-slide"><span></span></div>
+                                    <div class="swiper-slide"><span></span></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div> 
+                            <div class="explanition">
+                                <div>
+                                    <h3>가이유칸 수족관</h3>
+                                    <strong>이용시간</strong>
+                                    <p>
+                                            1월 19일부터 3월 19일까지(다음일정은 추후 공지)
+                                        <br>평일 10:30 ~ 7:00주말 및 공휴일 10:00 ~ 7:00
+                                    </p>
+                                    <strong>입장료</strong>
+                                    <p>어른 : 2400엔(16세 이상)어린이 1200엔,영유아 600엔 </p>
+                                    <strong>위치</strong>
+                                    <p>1 Chome-1-10 Kaigandori, Minato Ward, Osaka, 552-0022 </p>
+                                    <a href="" class="close_button"><img src="../portpolio/images/closebutton.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../portpolio/images/Tourist_Attraction02.png" alt="">
+                <figcaption>
+                    <h3>오사카 성</h3>
+                    <p>
+                            문화재 전시나 복원된 황금 다도실,
+                        <br>전망대에서 바라보는 경치 등의 볼거리가 가득
+                        <br>일본 투구・덧옷 입어보기 체험도 가능 !
+                    </p>
+                    <a class="btn_more">더보기</a>
+                    <div class='black'>
+                        <div class="white">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><span></span></div>
+                                    <div class="swiper-slide"><span></span></div>
+                                    <div class="swiper-slide"><span></span></div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                            <div class="explanition">
+                                <div>
+                                    <h3>오사카 성</h3>
+                                    <strong>이용시간</strong>
+                                    <p>
+                                            오전 9시~오후 5시(입관은 오후 4시30분까지)
+                                        <br>단,봄과 여름 철에는 시간을 연장하고 있습니다.
+                                    </p>
+                                    <strong>입장료</strong>
+                                    <p>어른	600엔,15세 이하 무료 (신분증 제시)</p>
+                                    <strong>위치</strong>
+                                    <p>1-1 Osakajo, Chuo Ward, Osaka, 540-0002</p>
+                                    <a href="" class="close_button"><img src="../portpolio/images/closebutton.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../portpolio/images/Tourist_Attraction03.png" alt="">
+                <figcaption>
+                    <h3>우메다 공중정원</h3>
+                    <p>
+                            360도의 파노라마전경을 
+                        <br>지상 170m에서부는 바람을 직접 느끼며
+                        <br>밤에는 화려한 오사카의 야경을 감상 !
+                    </p>
+                    <a class="btn_more">더보기</a>
+                    <div class='black'>
+                        <div class="white">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><span></span></div>
+                                    <div class="swiper-slide"><span></span></div>
+                                    <div class="swiper-slide"><span></span></div> 
+                                </div> 
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div> 
+                            <div class="explanition">
+                                <div>
+                                    <h3>우메다 공중정원</h3>
+                                    <strong>이용시간</strong>
+                                    <p>  09:30～22:30(주유패스 무료입장 은 18:00시 까지)</p>
+                                    <strong>입장료</strong>
+                                    <p>오사카 주유패스의 무료입장 혜택(오사카 주유패스 무료입장은 18:00시까지)<br>패스가 없을시 입장료는 성인 1명 기준 1,500엔.</p>
+                                    <strong>위치</strong>
+                                    <p>Umeda Sky Building, 1-1-88 Oyodochu, Kita-ku, Osaka 531-0076</p>
+                                    <a href="" class="close_button"><img src="../portpolio/images/closebutton.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="travelTips">
+        <div>
+            <figure class="test">
+                <!-- <img src="../portpolio/images/tip_Section.png" alt=""> -->
+                <div>
+                    오사카 주유 패스 이미지
+                </div>
+                <figcaption>
+                    <div>
+                        <h2>Tips to know about travel</h2>
+                        <h3>오사카 주유 패스</h3>
+                        <p>
+                                오사카 주유패스는 카드 승차권만 있으면
+                            <br>‘무료 입장 가능 시설’과 ‘전철과 버스’를
+                            <br>이용할 수 있는 아주 간편한 패스입니다!
+                        </p>
+                        <p>
+                                여기에 가이드＆쿠폰 앱을 사용하면 더욱더
+                            <br>편리하고 저렴하게 즐기실 수 있습니다.
+                        </p>
+                        <span>지금 다운로드 하세요!</span>
+                        <a href=""><img src="../portpolio/images/download.png" alt=""></a>
+                        <a href=""><img src="../portpolio/images/download android.png" alt=""></a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    
+    <section class="foodinOsaka">
+        <h2>Food in Osaka</h2>
+        <ul>
+            <li>
+                <div>
+                    <h3>리쿠로 오지상</h3>
+                    <p>
+                            입에 넣으면 금새 녹아버리는
+                        <br>부드럽고달달한 치즈케익.
+                        <br> 800엔 정도로 가격부담없이 먹을수있다!
+                        <br>위치:3 Chome-2-28 Nanba
+                        <br>Chuo Ward, Osaka, 542-0076
+                    </p>
+                </div>
+                <!-- <img src="../portpolio/images/cheesecake.png" alt=""> -->
+                <span></span>
+            </li>
+            <li>
+                <div>
+                    <h3>북극성(北極星)</h3>
+                    <p>
+                            전통적이고 아늑한 분위기에서의
+                        <br>식사 가 가능하다는장점!
+                        <br>위치:2 Chome-7-27
+                        <br>Nishishinsaibashi
+                        <br>Chuo Ward, Osaka, 542-0086
+                    </p>
+                </div>
+                <!-- <img src="../portpolio/images/omrice.png" alt=""> -->
+                <span></span>
+            </li>
+            <li>
+                <div>
+                    <h3>아지노야</h3>
+                    <p>
+                        오사카의 맛을 부자 4대에 걸쳐
+                        <br>이어가는 오코노미야키 가게.	
+                        <br>위치: 1-chōme-7
+                        <br>Hyundai Koisan Building 2F
+                        <br>Nanba, Chuo Ward,542-0076 
+                    </p>
+                </div>
+                <!-- <img src="../portpolio/images/okonomiyaki.png" alt=""> -->
+                <span></span>
+            </li>
+            <li>
+                <div>
+                    <h3>사카에 스시</h3>
+                    <p>
+                            매일 시장에서 직접 구매한 재료와
+                        <br>전국 각지의 어시장에서
+                        <br>직배송되는 재료만 사용하고있다!
+                        <br>위치 :2-27 Souemoncho,
+                        <br>Chuo Ward, Osaka, 542-0084
+                    </p>
+                </div>
+                <!-- <img src="../portpolio/images/susi.png" alt=""> -->
+                <span></span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="USJ">
+        <div>
+            <figure class="test">
+                <!-- <img src="../portpolio/images/USJ.png" alt=""> -->
+                <div>USJ 사진</div>
+                <figcaption>
+                    <div>
+                        <h2>Universal Studio Japan.</h2>
+                        <h3>전 세계의 트립 어드바이저<br>리뷰어들의 선택!</h3>
+                        <p>
+                            유니버셜 최대 꿀잼 스팟! 세계 최고의 엔터테인먼트가
+                            <br>모여있는 유니버설 스튜디오 재팬™에서
+                            <br>놀라움과 감동이 넘치는 하루를 보내보세요!
+                            <br>다양한 테마의 어트렉션과 특별한 퍼레이드 까지 !
+                        </p>
+                        <span>더 자세한 정보가 궁금하다면?</span><a href="" class="btn_more">더보기</a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <img src="../portpolio/images/Footer_logo.png" alt="">
+            <ul>
+                <li><a href=""><img src="../portpolio/images/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="../portpolio/images/share.png" alt=""></a></li>
+                <li><a href=""><img src="../portpolio/images/instargram.png" alt=""></a></li>
+                <li><a href=""><img src="../portpolio/images/more.png" alt=""></a></li>
+            </ul>
+            <a href=""><img src="../portpolio/images/ScrollUp.png" alt=""></a>
+            <p>Copyright ⓒ 2020 flourish Collective.site design handcrafted by.</p>
+            <p>terms+conditions | legal stuff | FAQ</p>
+        </div>
+    </footer>
+
+</body>
+</html>
